@@ -8,10 +8,11 @@
 import SwiftUI
 
 @main
-struct MANTENIBLEApp: App {
+struct MovieApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            AppContainer.shared.makeMovieListView(useMock: true) // Switch between mock/real
         }
     }
 }
+
