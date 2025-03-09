@@ -7,38 +7,36 @@
 
 import SwiftUI
 
-struct MovieListView: View {
-    @StateObject var viewModel: MovieListViewModel
+struct MovieListView<ViewModel: MovieListViewModelProtocol>: View {
+    
+    @StateObject var viewModel:  ViewModel
     
     var body: some View {
-        Group {
-            switch viewModel.state {
-            case .idle, .loading:
-                ProgressView()
-            case .loaded(let movies):
-                List(movies) { movie in
-                    MovieRow(movie: movie)
+        ZStack {
+            Color.blue
+            Group {
+                switch viewModel.state {
+                case .idle, .loading:
+                    ProgressView()
+                case .loaded(let movies):
+                    VStack {
+                        Rectangle()
+                            .fill(Color.yellow)
+                            .frame(height: 20)
+                        List(movies) { movie in
+                            MainRowSubView(movie: movie)
+                        }
+                    }
+                    
+                case .error(let error):
+                    ErrorView(error: error)
                 }
-            case .error(let error):
-                ErrorView(error: error)
             }
         }
+       
         .task {
             await viewModel.loadMovies()
         }
     }
 }
 
-struct MovieRow: View {
-    let movie: Movie
-    
-    var body: some View {
-        VStack(alignment: .leading) {
-            Text(movie.title)
-                .font(.headline)
-            Text(movie.overview)
-                .font(.subheadline)
-                .lineLimit(2)
-        }
-    }
-}

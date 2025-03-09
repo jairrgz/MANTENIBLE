@@ -11,7 +11,8 @@ import SwiftUI
 struct MovieApp: App {
     var body: some Scene {
         WindowGroup {
-            AppContainer.shared.makeMovieListView(useMock: true) // Switch between mock/real
+            AppContainer.shared.makeMovieListView(useMock: true)
+            
         }
     }
 }

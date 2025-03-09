@@ -6,11 +6,27 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXContainerItemProxy section */
+		696FA0BC2D7E3AE300A5B61B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6998854C2D7DFA69002BB85F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 699885532D7DFA69002BB85F;
+			remoteInfo = MANTENIBLE;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		696FA0B82D7E3AE300A5B61B /* MANTENIBLETests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MANTENIBLETests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		699885542D7DFA69002BB85F /* MANTENIBLE.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MANTENIBLE.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
+		696FA0B92D7E3AE300A5B61B /* MANTENIBLETests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = MANTENIBLETests;
+			sourceTree = "<group>";
+		};
 		699885562D7DFA69002BB85F /* MANTENIBLE */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = MANTENIBLE;
@@ -19,6 +35,13 @@
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		696FA0B52D7E3AE300A5B61B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		699885512D7DFA69002BB85F /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -33,6 +56,7 @@
 			isa = PBXGroup;
 			children = (
 				699885562D7DFA69002BB85F /* MANTENIBLE */,
+				696FA0B92D7E3AE300A5B61B /* MANTENIBLETests */,
 				699885552D7DFA69002BB85F /* Products */,
 			);
 			sourceTree = "<group>";
@@ -41,6 +65,7 @@
 			isa = PBXGroup;
 			children = (
 				699885542D7DFA69002BB85F /* MANTENIBLE.app */,
+				696FA0B82D7E3AE300A5B61B /* MANTENIBLETests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -48,6 +73,29 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		696FA0B72D7E3AE300A5B61B /* MANTENIBLETests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 696FA0C02D7E3AE300A5B61B /* Build configuration list for PBXNativeTarget "MANTENIBLETests" */;
+			buildPhases = (
+				696FA0B42D7E3AE300A5B61B /* Sources */,
+				696FA0B52D7E3AE300A5B61B /* Frameworks */,
+				696FA0B62D7E3AE300A5B61B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				696FA0BD2D7E3AE300A5B61B /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				696FA0B92D7E3AE300A5B61B /* MANTENIBLETests */,
+			);
+			name = MANTENIBLETests;
+			packageProductDependencies = (
+			);
+			productName = MANTENIBLETests;
+			productReference = 696FA0B82D7E3AE300A5B61B /* MANTENIBLETests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		699885532D7DFA69002BB85F /* MANTENIBLE */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 699885622D7DFA6B002BB85F /* Build configuration list for PBXNativeTarget "MANTENIBLE" */;
@@ -80,6 +128,10 @@
 				LastSwiftUpdateCheck = 1620;
 				LastUpgradeCheck = 1620;
 				TargetAttributes = {
+					696FA0B72D7E3AE300A5B61B = {
+						CreatedOnToolsVersion = 16.2;
+						TestTargetID = 699885532D7DFA69002BB85F;
+					};
 					699885532D7DFA69002BB85F = {
 						CreatedOnToolsVersion = 16.2;
 					};
@@ -100,11 +152,19 @@
 			projectRoot = "";
 			targets = (
 				699885532D7DFA69002BB85F /* MANTENIBLE */,
+				696FA0B72D7E3AE300A5B61B /* MANTENIBLETests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		696FA0B62D7E3AE300A5B61B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		699885522D7DFA69002BB85F /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -115,6 +175,13 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		696FA0B42D7E3AE300A5B61B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		699885502D7DFA69002BB85F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -124,7 +191,51 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		696FA0BD2D7E3AE300A5B61B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 699885532D7DFA69002BB85F /* MANTENIBLE */;
+			targetProxy = 696FA0BC2D7E3AE300A5B61B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
+		696FA0BE2D7E3AE300A5B61B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9G888JR76L;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jairramirezgaston.MANTENIBLETests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MANTENIBLE.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/MANTENIBLE";
+			};
+			name = Debug;
+		};
+		696FA0BF2D7E3AE300A5B61B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9G888JR76L;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jairramirezgaston.MANTENIBLETests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MANTENIBLE.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/MANTENIBLE";
+			};
+			name = Release;
+		};
 		699885602D7DFA6B002BB85F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -305,6 +416,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		696FA0C02D7E3AE300A5B61B /* Build configuration list for PBXNativeTarget "MANTENIBLETests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				696FA0BE2D7E3AE300A5B61B /* Debug */,
+				696FA0BF2D7E3AE300A5B61B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		6998854F2D7DFA69002BB85F /* Build configuration list for PBXProject "MANTENIBLE" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

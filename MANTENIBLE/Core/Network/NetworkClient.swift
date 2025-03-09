@@ -8,13 +8,17 @@
 import Foundation
 
 final class NetworkClient: NetworkClientProtocol {
+    
+    // MARK: - PROPERTIES
     private let baseURL = "https://api.example.com/v1/"
     private let session: URLSession
     
+    // MARK: - DESIGNATED INITIALIZER
     init(session: URLSession = .shared) {
         self.session = session
     }
     
+    // MARK: - METHODS
     func request<T: Decodable>(endpoint: String, method: HTTPMethod) async throws -> T {
         guard let url = URL(string: baseURL + endpoint) else {
             throw NetworkError.invalidURL

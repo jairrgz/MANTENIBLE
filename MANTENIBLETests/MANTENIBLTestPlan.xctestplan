@@ -1,0 +1,24 @@
+{
+  "configurations" : [
+    {
+      "id" : "D12A190C-6AC3-43B8-BA0E-0C04FBA47B15",
+      "name" : "Configuration 1",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+    "testTimeoutsEnabled" : true
+  },
+  "testTargets" : [
+    {
+      "target" : {
+        "containerPath" : "container:MANTENIBLE.xcodeproj",
+        "identifier" : "696FA0B72D7E3AE300A5B61B",
+        "name" : "MANTENIBLETests"
+      }
+    }
+  ],
+  "version" : 1
+}

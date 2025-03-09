@@ -7,22 +7,18 @@
 
 import SwiftUI
 
-@MainActor
-final class MovieListViewModel: ObservableObject {
-    enum State {
-        case idle
-        case loading
-        case loaded([Movie])
-        case error(Error)
-    }
+final class MovieListViewModel: MovieListViewModelProtocol {
     
-    @Published private(set) var state: State = .idle
+    // MARK: - PROPERTIES
+    @Published private(set) var state: EnumStateOfMovie = .idle
     private let useCase: FetchMoviesUseCaseProtocol
     
+    // MARK: - DESIGNATED INITIALIZER
     init(useCase: FetchMoviesUseCaseProtocol) {
         self.useCase = useCase
     }
     
+    // MARK: - METHODS
     func loadMovies() async {
         state = .loading
         do {

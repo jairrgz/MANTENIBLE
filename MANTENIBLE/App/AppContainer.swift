@@ -5,7 +5,7 @@
 //  Created by Jorge Jair Ramirez Gaston Zuloeta on 9/03/25.
 //
 
-import Foundation
+import SwiftUI
 
 final class AppContainer {
     static let shared = AppContainer()
@@ -16,7 +16,7 @@ final class AppContainer {
         self.networkClient = NetworkClient()
     }
     
-    @MainActor func makeMovieListView(useMock: Bool = false) -> MovieListView {
+    @MainActor func makeMovieListView(useMock: Bool = false) -> some View {
         let dataSource: MovieDataSourceProtocol = useMock
             ? MockMovieDataSource()
             : RemoteMovieDataSource(networkClient: networkClient)
@@ -27,4 +27,6 @@ final class AppContainer {
         
         return MovieListView(viewModel: viewModel)
     }
+    
+    
 }
